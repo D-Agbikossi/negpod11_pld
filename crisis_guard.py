@@ -86,12 +86,10 @@ def report_medical_emergency():
 
 """ Script to record brutality incidents """
 
-def gather_info():
+def report_incident():
     """Gathers information about the brutality incident from the user"""
     user_info = {}
 
-    user_info['user_name'] = input("Please write your name and surname: ")
-    user_info['age'] = input("Please write your age: ")
     user_info['location'] = input("Where is the incident venue? Please give a location or a landmark within 1km if you are in doubt: ")
 
     # Prompt the user to specify when the incident occurred
@@ -111,21 +109,16 @@ def gather_info():
     # Prompt the user to describe the situation
     user_info['situation_description'] = input("Please briefly describe the incident. Do not leave out any details. Specify the date or period if the incident took place in the past: ")
 
-    return user_info
-
-# Displays a summary of the gathered informations so the user can verify the infomation
-def display_summary(user_info):
-    """Displays a summary of the gathered information"""
+    # Displays a summary of the gathered information
     print("\nSummary of the information provided:")
-    print(f"Name: {user_info['user_name']}")
-    print(f"Age: {user_info['age']}")
     print(f"Date: {user_info['date']}")
     print(f"Location: {user_info['location']}")
     print(f"Role in the event: {user_info['role']}")
     print(f"This is what happened: {user_info['situation_description']}")
 
+    # Provide emergency contact information if the incident is happening now
     if user_info['date'] == '1':
-        print("\nCall one of the following services according to your need:\nPolice: 911\nEmergency: 112\nFire department: 101")
+        print("\nCall one of the following services according to your need:\nPolice: 999\nEmergency: 911\nFire department: 112")
 
     print("Thank you for reporting this incident. You will receive updates on progress when we start examining your case.")
 
