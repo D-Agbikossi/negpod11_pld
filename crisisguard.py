@@ -128,3 +128,19 @@ def display_summary(user_info):
         print("\nCall one of the following services according to your need:\nPolice: 911\nEmergency: 112\nFire department: 101")
 
     print("Thank you for reporting this incident. You will receive updates on progress when we start examining your case.")
+
+""" This function is to inform about the workshops and webinars available. """
+def educational_workshops():
+    print("\nEducational Workshops and Webinars")
+    print("1. First Aid Training - July 5")
+    print("2. Legal Rights Workshop - July 12")
+    print("3. Community Organizing Webinar - July 19")
+    choice = input("Enter the workshop number to get more details: ")
+    if choice == '1':
+        print("First Aid Training - July 5, 2 PM at Health Clinic")
+    elif choice == '2':
+        print("Legal Rights Workshop - July 12, 4 PM on X-Space")
+    elif choice == '3':
+        print("Community Organizing Webinar - July 19, 6 PM on X-space")
+    else:
+        print("Invalid choice, please try again.")
