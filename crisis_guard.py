@@ -137,3 +137,41 @@ def educational_workshops():
         print("Community Organizing Webinar - July 19, 6 PM on X-space")
     else:
         print("Invalid choice, please try again.")
+
+def request_legal_assistance():
+    print("\nRequesting Legal Assistance\n")
+
+    # Collecting information about the user
+    user_name = input("What is your name? ")
+    location = input("What is your location? ")
+    contact_details = input("Enter your contact details: ")
+
+    # Asking about the nature of the legal issue
+    print("\nPlease describe the nature of your legal issue:")
+    print("1. Arrest/Detention")
+    print("2. Property Dispute")
+    print("3. Employment Issue")
+    print("4. Discrimination or Harassment")
+    print("5. Other (please describe)")
+
+    legal_issue = input("Please select one number above: ").strip().lower()
+
+    # Handling the different cases for the legal issue
+    if legal_issue == "1":
+        print(f"{user_name}, we have recorded your request for legal assistance regarding an arrest or detention. Our legal team will contact you at {contact_details} to provide support.")
+
+    elif legal_issue == "2":
+        print(f"{user_name}, we have recorded your request for legal assistance regarding a property dispute. Our legal team will contact you at {contact_details} to provide support.")
+
+    elif legal_issue == "3":
+        print(f"{user_name}, we have recorded your request for legal assistance regarding an employment issue. Our legal team will contact you at {contact_details} to provide support.")
+
+    elif legal_issue == "4":
+        print(f"{user_name}, we have recorded your request for legal assistance regarding discrimination or harassment. Our legal team will contact you at {contact_details} to provide support.")
+
+    elif legal_issue == "5":
+        other_issue = input("Please describe your legal issue: ")
+        print(f"{user_name}, we have recorded your request for legal assistance regarding '{other_issue}'. Our legal team will contact you at {contact_details} to provide support.")
+
+    else:
+        print("Invalid selection. Please try again.")
