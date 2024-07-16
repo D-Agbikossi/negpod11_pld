@@ -82,7 +82,7 @@ def report_medical_emergency():
 
     # A wrong option has been selected
     else:
-        print("Invalid selection. Please select between 1 and 2. Note that the emergency number is 112".)
+        print("Invalid selection. Please select between 1 and 2. Note that the emergency number is 112.")
 
 """ Script to record brutality incidents """
 
