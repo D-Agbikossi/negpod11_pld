@@ -114,7 +114,7 @@ def gather_info():
     return user_info
 
 # Displays a summary of the gathered informations so the user can verify the infomation
-def display_summary(user_info):
+def report_incident(user_info):
     """Displays a summary of the gathered information"""
     print("\nSummary of the information provided:")
     print(f"Name: {user_info['user_name']}")
@@ -128,3 +128,6 @@ def display_summary(user_info):
         print("\nCall one of the following services according to your need:\nPolice: 911\nEmergency: 112\nFire department: 101")
 
     print("Thank you for reporting this incident. You will receive updates on progress when we start examining your case.")
+
+""" This function informe the user on worshop available """
+
