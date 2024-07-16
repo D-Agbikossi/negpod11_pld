@@ -114,7 +114,7 @@ def gather_info():
     return user_info
 
 # Displays a summary of the gathered informations so the user can verify the infomation
-def display_summary(user_info):
+def report_incident(user_info):
     """Displays a summary of the gathered information"""
     print("\nSummary of the information provided:")
     print(f"Name: {user_info['user_name']}")
