@@ -204,3 +204,18 @@ def community_events():
         print("\n📍 Blood donations - Everyday from July 21st to July 30th at Health Clinic from 9AM\n")
     else:
         print("Invalid choice, please try again.")
+
+def local_resources_directory():
+    print("\nLocal Resources Directory")
+    print("1. Shelters")
+    print("2. Food Banks")
+    print("3. Mental Health Services")
+    choice = input("\nEnter the resource type number to get more details: \n")
+    if choice == '1':
+        print("\nShelters: \n- Community Shelter: 123 Main St, Phone: 555-1234\n")
+    elif choice == '2':
+        print("\nFood Banks: \n- City Food Bank: 456 Elm St, Phone: 555-5678\n")
+    elif choice == '3':
+        print("\nMental Health Services: \n- Wellness Center: 789 Oak St, Phone: 555-9012\n")
+    else:
+        print("\nInvalid choice, please try again.\n")
