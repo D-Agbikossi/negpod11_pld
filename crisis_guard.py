@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 def report_medical_emergency():
     print("\nReporting a Medical Emergency\n")
 
