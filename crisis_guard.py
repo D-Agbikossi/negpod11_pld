@@ -186,3 +186,21 @@ def volunteer_opportunities():
     name = input("Enter your name: ")
     contact_details = input("Enter your contact details: ")
     print(f"Thank you, {name}. You have signed up for the volunteer opportunity '{choice}'. We will contact you at {contact_details}.")
+
+def community_events():
+    print("\nCommunity Events\n")
+    print("1. Neighborhood Meeting - July 10")
+    print("2. Health Workshop - July 15")
+    print("3. Safety Training - July 20")
+    print("4. Blood drive - July 21st - July 30th")
+    choice = input("\nEnter the event number to get more details: \n")
+    if choice == '1':
+        print("\n📍 Neighborhood Meeting - July 10, 5 PM at Community Center\n")
+    elif choice == '2':
+        print("\n📍 Health Workshop - July 15, 3 PM at Health Clinic\n")
+    elif choice == '3':
+        print("\n📍 Safety Training - July 20, 10 AM at Fire Station\n")
+    elif choice == '4':
+        print("\n📍 Blood donations - Everyday from July 21st to July 30th at Health Clinic from 9AM\n")
+    else:
+        print("Invalid choice, please try again.")
