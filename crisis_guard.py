@@ -211,10 +211,10 @@ def local_resources_directory():
     print("3. Mental Health Services")
     choice = input("\nEnter the resource type number to get more details: \n")
     if choice == '1':
-        print("\nShelters: \n- Community Shelter: 123 Main St, Phone: 555-1234\n")
+        print("\n🏠 Shelters: \n- Community Shelter: 123 Main St, Phone: 555-1234\n")
     elif choice == '2':
-        print("\nFood Banks: \n- City Food Bank: 456 Elm St, Phone: 555-5678\n")
+        print("\n🥗 Food Banks: \n- City Food Bank: 456 Elm St, Phone: 555-5678\n")
     elif choice == '3':
-        print("\nMental Health Services: \n- Wellness Center: 789 Oak St, Phone: 555-9012\n")
+        print("\n🏥 Mental Health Services: \n- Wellness Center: 789 Oak St, Phone: 555-9012\n")
     else:
-        print("\nInvalid choice, please try again.\n")
+        print("\n❌ Invalid choice, please try again.\n")
