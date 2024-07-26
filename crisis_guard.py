@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 def report_medical_emergency():
     print("\nReporting a Medical Emergency\n")
 
@@ -91,19 +90,20 @@ def report_incident():
     user_info = {}
 
     user_info['location'] = input("Where is the incident venue? Please give a location or a landmark within 1km if you are in doubt: ")
-
     # Prompt the user to specify when the incident occurred
     date_prompt = "Please choose one of the following options:\n"
     date_prompt += "1. The incident is happening now. I require immediate assistance.\n"
     date_prompt += "2. The incident is happening now. I do not need immediate assistance.\n"
-    date_prompt += "3. The incident took place in the past."
+    date_prompt += "3. The incident took place in the past.\n"
+    date_prompt += "Enter your choice:"
     user_info['date'] = input(date_prompt)
 
     # Prompt the user to specify their role in the incident
     role_prompt = "Please choose one of the following options:\n"
     role_prompt += "1. I am the victim\n"
     role_prompt += "2. I am a witness\n"
-    role_prompt += "3. I am a culprit"
+    role_prompt += "3. I am a culprit\n"
+    role_prompt += "Enter your choice:"
     user_info['role'] = input(role_prompt)
 
     # Prompt the user to describe the situation
@@ -186,3 +186,36 @@ def volunteer_opportunities():
     name = input("Enter your name: ")
     contact_details = input("Enter your contact details: ")
     print(f"Thank you, {name}. You have signed up for the volunteer opportunity '{choice}'. We will contact you at {contact_details}.")
+
+def community_events():
+    print("\nCommunity Events\n")
+    print("1. Neighborhood Meeting - July 10")
+    print("2. Health Workshop - July 15")
+    print("3. Safety Training - July 20")
+    print("4. Blood drive - July 21st - July 30th")
+    choice = input("\nEnter the event number to get more details: \n")
+    if choice == '1':
+        print("\n📍 Neighborhood Meeting - July 10, 5 PM at Community Center\n")
+    elif choice == '2':
+        print("\n📍 Health Workshop - July 15, 3 PM at Health Clinic\n")
+    elif choice == '3':
+        print("\n📍 Safety Training - July 20, 10 AM at Fire Station\n")
+    elif choice == '4':
+        print("\n📍 Blood donations - Everyday from July 21st to July 30th at Health Clinic from 9AM\n")
+    else:
+        print("Invalid choice, please try again.")
+
+def local_resources_directory():
+    print("\nLocal Resources Directory")
+    print("1. Shelters")
+    print("2. Food Banks")
+    print("3. Mental Health Services")
+    choice = input("\nEnter the resource type number to get more details: \n")
+    if choice == '1':
+        print("\n🏠 Shelters: \n- Community Shelter: 123 Main St, Phone: 555-1234\n")
+    elif choice == '2':
+        print("\n🥗 Food Banks: \n- City Food Bank: 456 Elm St, Phone: 555-5678\n")
+    elif choice == '3':
+        print("\n🏥 Mental Health Services: \n- Wellness Center: 789 Oak St, Phone: 555-9012\n")
+    else:
+        print("\n❌ Invalid choice, please try again.\n")
