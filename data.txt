@@ -1,0 +1,61 @@
+type: Medical Emergency
+user_name: erfrer
+location: wfewff
+relation_to_victim: 1
+situation_description: 3
+
+user_name: Akachi
+location: Zindiro
+contact_details: +250798657455
+legal_issue: 2
+
+type: Medical Emergency
+user_name: Edwin
+location: Kanombe
+relation_to_victim: 1
+situation_description: 3
+
+user_name: Edwin
+location: Kanombe
+contact_details: 0788
+legal_issue: 1
+
+type: Incident Report
+location: Lake Kivu
+date: 1
+role: 2
+situation_description: The crocodile ate the man
+
+type: Volunteer Opportunity
+choice: 3
+name: Edwin
+contact_details: 0788
+opportunity: Legal Assistant
+
+type: Local Resources Directory
+choice: 1
+resource: 🏠 Shelters: 
+- Community Shelter: 123 Main St, Phone: 555-1234
+
+
+type: Community Event
+choice: 3
+event: 📍 Safety Training - July 20, 10 AM at Fire Station
+
+type: Community Event
+choice: 4
+event: 📍 Blood donations - Everyday from July 21st to July 30th at Health Clinic from 9AM
+
+type: Community Event
+choice: 1
+event: 📍 Neighborhood Meeting - July 10, 5 PM at Community Center
+
+type: Educational Workshop
+workshop: First Aid Training - July 5, 2 PM at Health Clinic
+
+type: Volunteer Opportunity
+choice: 4
+name: jhju
+contact_details: 678986756
+opportunity: Medic
+
