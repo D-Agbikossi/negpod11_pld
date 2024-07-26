@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+from crisis_guard import *
 
-import crisis_guard
+
 def main_menu():
     """
     Display the main menu and handle user input to navigate to different functionalities.
