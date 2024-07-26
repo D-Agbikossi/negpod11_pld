@@ -90,19 +90,20 @@ def report_incident():
     user_info = {}
 
     user_info['location'] = input("Where is the incident venue? Please give a location or a landmark within 1km if you are in doubt: ")
-
     # Prompt the user to specify when the incident occurred
     date_prompt = "Please choose one of the following options:\n"
     date_prompt += "1. The incident is happening now. I require immediate assistance.\n"
     date_prompt += "2. The incident is happening now. I do not need immediate assistance.\n"
-    date_prompt += "3. The incident took place in the past."
+    date_prompt += "3. The incident took place in the past.\n"
+    date_prompt += "Enter your choice:"
     user_info['date'] = input(date_prompt)
 
     # Prompt the user to specify their role in the incident
     role_prompt = "Please choose one of the following options:\n"
     role_prompt += "1. I am the victim\n"
     role_prompt += "2. I am a witness\n"
-    role_prompt += "3. I am a culprit"
+    role_prompt += "3. I am a culprit\n"
+    role_prompt += "Enter your choice:"
     user_info['role'] = input(role_prompt)
 
     # Prompt the user to describe the situation
