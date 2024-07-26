@@ -1,1 +1,1 @@
-PLD group coding session.
+PLD group coding session
