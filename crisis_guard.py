@@ -179,13 +179,23 @@ def request_legal_assistance():
 def volunteer_opportunities():
     print("\nDo you want to volunteer with us?")
     print("1. Community Clean-Up")
-    print("2. Food Distribution")
-    print("3. Legal assistant")
-    print("4.Medic")
+    print("2. Food Distributor")
+    print("3. Legal Assistant")
+    print("4. Medic")
     choice = input("Choose an opportunity to volunteer for: ")
     name = input("Enter your name: ")
     contact_details = input("Enter your contact details: ")
     print(f"Thank you, {name}. You have signed up for the volunteer opportunity '{choice}'. We will contact you at {contact_details}.")
+    if choice == '1':
+        print("Community Clean-Up")
+    elif choice == '2':
+        print("Food Distributor")
+    elif choice == '3':
+        print("Legal Assistant")
+    elif choice == '4':
+        print("Medic")
+    else:
+        print("Invalid selection. Please try again.")
 
 def community_events():
     print("\nCommunity Events\n")
