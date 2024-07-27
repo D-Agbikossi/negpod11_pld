@@ -59,3 +59,29 @@ name: jhju
 contact_details: 678986756
 opportunity: Medic
 
+type: Medical Emergency
+user_name: Bruno
+location: Masizi
+relation_to_victim: 1
+situation_description: 3
+
+type: Volunteer Opportunity
+choice: 2
+name: Akachi
+contact_details: +250781232334
+opportunity: Food Distributor
+
+type: Volunteer Opportunity
+choice: 8
+name: as
+contact_details: 23345
+opportunity: Invalid selection. Please try again.
+
+type: Community Event
+choice: 1
+event: 📍 Neighborhood Meeting - July 10, 5 PM at Community Center
+
+type: Community Event
+choice: 2
+event: 📍 Health Workshop - July 15, 3 PM at Health Clinic
+
