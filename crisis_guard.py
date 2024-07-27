@@ -198,40 +198,11 @@ def request_legal_assistance():
 
     else:
         print("Invalid selection. Please try again.")
-<<<<<<< HEAD
-    
-=======
+
 
     save_to_file(user_info)
 
-def volunteer_opportunities():
-    print("\nDo you want to volunteer with us?")
 
-    user_info = {}
-    user_info['type'] = 'Volunteer Opportunity'
-
-    print("1. Community Clean-Up")
-    print("2. Food Distributor")
-    print("3. Legal Assistant")
-    print("4. Medic")
-    user_info['choice']= input("Choose an opportunity to volunteer for: ")
-    user_info['name'] = input("Enter your name: ")
-    user_info['contact_details'] = input("Enter your contact details: ")
-    print(f"Thank you, {user_info['name']}. You have signed up for the volunteer opportunity '{user_info['choice']}'. We will contact you at {user_info['contact_details']}.")
-    if user_info['choice'] == '1':
-        user_info['opportunity'] = "Community Clean-Up"
-    elif user_info['choice'] == '2':
-        user_info['opportunity'] = "Food Distributor"
-    elif user_info['choice'] == '3':
-        user_info['opportunity'] = "Legal Assistant"
-    elif user_info['choice'] == '4':
-        user_info['opportunity'] = "Medic"
-    else:
-        user_info['opportunity'] = "Invalid selection. Please try again."
-    print(user_info['opportunity'])
-
-    save_to_file(user_info)
->>>>>>> 8cbd50bef2a4f3fe01f06c33a0e90da5f7b6db0f
 
 def community_events():
     user_info = {}
