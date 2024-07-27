@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from file_operations import volunteer_opportunities, display_volunteer_opportunities, backup_file
 
 
 def save_to_file(user_info):
@@ -122,13 +121,6 @@ def report_incident():
     # Prompt the user to describe the situation
     user_info['situation_description'] = input("Please briefly describe the incident. Do not leave out any details. Specify the date or period if the incident took place in the past: ")
 
-    # Displays a summary of the gathered information
-    # print("\nSummary of the information provided:")
-    # print(f"Date: {user_info['date']}")
-    # print(f"Location: {user_info['location']}")
-    # print(f"Role in the event: {user_info['role']}")
-    # print(f"This is what happened: {user_info['situation_description']}")
-
     # Provide emergency contact information if the incident is happening now
     if user_info['date'] == '1':
         print("\nCall one of the following services according to your need:\nPolice: 999\nEmergency: 911\nFire department: 112")
@@ -162,7 +154,7 @@ def educational_workshops():
 def request_legal_assistance():
     print("\nRequesting Legal Assistance\n")
     user_info = {}
-    user_info = {}
+    user_info['type'] = 'Legal Assistance'
 
     # Collecting information about the user
     user_info['user_name'] = input("What is your name? ")
@@ -202,7 +194,32 @@ def request_legal_assistance():
 
     save_to_file(user_info)
 
+def volunteer_opportunities():
+    user_info = {}
+    user_info['type'] = 'Volunteer Opportunity'
+    print("\nDo you want to volunteer with us?")
+    print("1. Community Clean-Up")
+    print("2. Food Distributor")
+    print("3. Legal Assistant")
+    print("4. Medic")
+    user_info['choice'] = input("Choose an opportunity to volunteer for: ")
+    user_info['name'] = input("Enter your name: ")
+    user_info['contact_details'] = input("Enter your contact details: ")
+    if user_info['choice'] == '1':
+        user_info['opportunity'] = "Community Clean-Up"
+    elif user_info['choice'] == '2':
+        user_info['opportunity'] = "Food Distributor"
+    elif user_info['choice'] == '3':
+        user_info['opportunity'] = "Legal Assistant"
+    elif user_info['choice'] == '4':
+        user_info['opportunity'] = "Medic"
+    else:
+        user_info['opportunity'] = "Invalid selection. Please try again."
 
+    print(f"Thank you, {user_info['name']}. You have signed up for the volunteer opportunity '{user_info['opportunity']}'. We will contact you at {user_info['contact_details']}.")
+    # print(user_info['opportunity'])
+
+    save_to_file(user_info)
 
 def community_events():
     user_info = {}
