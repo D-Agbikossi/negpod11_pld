@@ -4,7 +4,7 @@ from crisis_guard import *
 
 def main_menu():
     """
-    Display the main menu and handle user input to navigate to different functionalities.
+    Display correctly the main menu and handle user input to navigate to different functionalities.
     """
     while True:
         # Display the menu options
